@@ -1,0 +1,24 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right:16px
+}
+
+/* Smaller screen size */
+@media (min-width: 640px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+
+/* Larger screen size */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

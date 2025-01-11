@@ -1,0 +1,109 @@
+.basestyles-solid{
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgb(38 38 38 / 1);
+    color: rgb(255 255 255 / 1 );
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem  0.5rem 0.75rem;
+    font-size: 1rem; 
+    line-height: 1.5rem;
+    font-weight: 600;
+    outline-width: 2px;
+    outline-offset: 2px;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+
+.basestyles-outline{
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: rgb(212 212 212  / 1);
+    padding: calc(0.5rem - 1px) calc(0.75rem - 1px) calc(0.5rem - 1px) calc(0.75rem - 1px );
+    font-size: 1rem;
+    line-height: 1.5rem;
+    outline-width: 2px;
+    outline-offset: 2px;
+    color: rgb(64 64 64 / 1);
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+
+.variantstyles-cyan{
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(6 182 212 / 1);
+    color: white;
+}
+
+.variantstyles-cyan::before{
+    position: absolute;
+    inset: 0;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.variantstyles-cyan:active::before{
+    background-color: transparent;
+}
+
+.variantstyles-cyan:hover::before{
+    background-color: rgb(255 255 255 / 0.1);
+}
+
+.variantstyles-cyan:active{
+    background-color: rgb(8 145 178 / 1);
+    color: rgb(255 255 255 / 0.8);
+}
+
+
+.variantstyles-white{
+    background-color: white;
+    color: rgb(22 78 99 / 1);
+}
+
+.variantstyles-white:hover{
+    background-color: rgb(255 255 255 / 0.9 );
+}
+
+.variantstyles-white:active{
+    background-color: rgb(255 255 255 / 0.9 );
+    color: rgb(22 78 99 / 0.7);
+}
+
+.variantsyles-gray{
+    background-color: rgb(31 41 55 / 1);
+    color: white;
+}
+
+.variantstyles-gray:hover{
+    background-color: rgb(17 24 39 / 1);
+}
+
+.variantsyles-gray:active{
+    background-color: rgb(31 41 55 / 1);
+    color : rgb(255 255 255 / 0.8)
+}
+
+
+.variantstyles-outline-gray{
+    border-color: rgb(209 213 219 / 1);
+    color: rgb(55 65 81 / 1);
+}
+
+.variantstyles-outline-gray:hover{
+    border-color: rgb(156 163 175 / 1);
+}
+
+.variantstyles-outline-gray:active{
+    border-color: rgb(243 244 246 / 1);
+    color:rgb(55 65 81 / 0.8);
+}
+
+

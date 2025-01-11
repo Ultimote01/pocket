@@ -1,0 +1,130 @@
+.mobilenav-link{
+    display: block;
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.025rem;
+    color: rgb(64 64 64 / 1);
+}
+
+
+.header-container{
+    position: relative;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header-div{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.header-div1{
+    display: none;
+}
+
+.header-div2{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-popover{
+   font-size: inherit;
+   margin-top: -0.60rem;
+}
+
+.header-popoverbutton{
+    position: relative;
+    z-index: 10;
+    margin: -0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    stroke:#171717;
+    padding: 0.5rem;
+}
+
+
+.header-logo{
+    width: auto;
+    height: 2.5rem;
+}
+
+.chevronup-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.menuUp-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.popover-backdrop{
+    position: fixed;
+    inset: 0px;
+    z-index: 0;
+    backdrop-filter: blur(8px);
+    background-color: rgb(212 212 212 / 0.6);
+}
+
+.popover-panel{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: top;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(250 250 250 / 1);
+    padding:8rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(23, 23, 23, 0.2) 0px 25px 50px -12px;
+}
+
+.mobilenav-container :not([hidden]) ~ :not([hidden]){
+    margin-top: 1rem;
+   
+}
+
+.mobilenav-button-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.header-login-button{
+    display: none;
+}
+
+.header-download-button{
+    display: none;
+
+}
+
+/* Large Screen Size */
+@media (min-width: 1024px){
+    .header-div1{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .header-popover{
+        display: none;
+    }
+
+    .header-login-button{
+        display: block;
+    }
+
+    .header-download-button{
+        display: block;
+    }
+}
+
