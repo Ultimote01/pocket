@@ -1,0 +1,11 @@
+.appdemo-div{
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.appdemo-div > :not([hidden]) ~ :not([hidden]){
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-color: rgb(243 244 246 / 1);
+}

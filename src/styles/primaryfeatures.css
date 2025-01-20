@@ -1,0 +1,14 @@
+ .invitescreendiv{
+    padding: 1.5rem 1rem;
+ }
+
+ .invitescreendiv1 > :not([hidden]) ~ :not([hidden]){
+    padding: 1.5rem 0px;
+ }
+
+
+.invitescreendiv2{
+    margin-top: 0.5rem;
+    border-bottom-width: 1px;
+    border-color: rgb(229 231 235 / 1);
+}

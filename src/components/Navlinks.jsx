@@ -10,7 +10,7 @@ import "@/styles/navlinks.css"
 export function NavLinks (){
     let [hoveredIndex, setHoveredIndex]= useState(null)
     let  timeoutRef = useRef(null)
-
+ 
     return [
         ["Features", "/#features"],
         ["Reviews","/#reviews"],

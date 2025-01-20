@@ -1,3 +1,11 @@
-export default function Page() {
-   return  <div> Home Page </div>
+import { Hero } from "@/components/Hero";
+
+
+export default function Home() {
+   return (
+      <>
+         <Hero/>
+         
+      </>
+   )
 }
