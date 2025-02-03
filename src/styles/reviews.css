@@ -1,0 +1,187 @@
+.reviewsStarrating{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.reviewsStarratingOpt{
+    fill: #06b6d4;
+}
+
+.reviewsStarratingOpt1{
+    fill: #67e8f9;
+}
+
+.reviewfigure{
+    opacity: 0;
+    padding: 1.5rem;
+    background-color: rgb(255 255 255 / 1);
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(23, 23, 23, 0.05) 0px 4px 6px -1px, rgba(23, 23, 23, 0.05) 0px 2px 4px -2px;
+    animation: fade-in 0.6s linear forwards;
+}
+
+
+.reviewp{
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 600;   
+}
+
+.reviewp::before{
+    content: '"';
+}
+
+.reviewp::after{
+    content: '"';
+}
+
+.reviewfigurecaption{
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgb(82 82  82 / 1);
+}
+.reviewfigurecaption::before{
+    content: '–';
+}
+
+
+.reviewcolumndiv{
+    padding: 1rem 0px 1rem 0px;
+    animation: reviewmarquee   linear infinite;
+}
+
+.reviewcolumndiv > :not([hidden]) ~ :not([hidden]){
+   margin-top: 2rem;
+}
+
+.reviewcolumn1{
+    display: none;
+}
+
+.reviewcolumn2{
+    display: none;
+}
+ 
+
+.reviewgriddiv{
+    position: relative;
+    margin:4rem -1rem 0px -1rem;
+    display: grid;
+    height: 49rem;
+    max-height: 150vh;
+    grid-template-columns: repeat(1, minmax(0, ifr));
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: hidden;
+    padding:0px 1rem 0px 1rem;
+}
+
+.reviewgriddiv1{
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 8rem;
+    background-image: linear-gradient(to bottom ,rgb(250, 250, 250), rgba(250, 250, 250, 0));
+}
+
+.reviewgriddiv2{
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8rem;
+    background-image: linear-gradient(to top ,rgb(250, 250, 250), rgba(250, 250, 250, 0));
+}
+
+.reviewsSection{
+    padding-bottom: 4rem;
+    padding-top: 5rem;
+}
+
+.reviewsh2{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: rgb(23 23 23 / 1);
+}
+
+.reviewsp{
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: rgb(82 82 82 / 1);
+}
+
+@media (min-width: 640px){
+    .reviewgriddiv{
+        margin-top:5rem;
+    }
+    .reviewsSection{
+        padding-bottom: 6rem;
+        padding-top: 8rem;
+    }
+    .reviewsh2{
+        text-align: center;
+    }
+    .reviewsp{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    .reviewgriddiv{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .reviewcolumnOpt{
+        display: none;
+    }
+
+    .reviewcolumn1{
+        display: block;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .reviewgriddiv{
+        grid-template-columns: repeat(3 , minmax(0, 1fr));
+    }
+
+    .reviewcolumnOpt1{
+        display: none;
+    }
+
+    .reviewcolumn1Opt{
+        display: none;
+    }
+
+    .reviewcolumn2{
+        display: block;
+    }
+}
+
+
+@keyframes reviewmarquee {
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-50%);
+    }
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

@@ -1,15 +1,15 @@
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right:16px
+  max-width: 80rem;
+  margin: 0px auto;
+  padding-left: 1rem;
+  padding-right:1rem;
 }
 
 /* Smaller screen size */
 @media (min-width: 640px) {
   .container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -18,7 +18,7 @@
 /* Larger screen size */
 @media (min-width: 1024px) {
   .container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

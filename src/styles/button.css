@@ -5,7 +5,7 @@
     color: rgb(255 255 255 / 1 );
     border-radius: 0.5rem;
     padding: 0.5rem 0.75rem  0.5rem 0.75rem;
-    font-size: 1rem; 
+    font-size: 0.875rem; 
     line-height: 1.5rem;
     font-weight: 600;
     outline-width: 2px;
@@ -23,7 +23,7 @@
     border-width: 1px;
     border-color: rgb(212 212 212  / 1);
     padding: calc(0.5rem - 1px) calc(0.75rem - 1px) calc(0.5rem - 1px) calc(0.75rem - 1px );
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5rem;
     outline-width: 2px;
     outline-offset: 2px;

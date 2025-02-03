@@ -26,16 +26,17 @@ const variantStyles={
 export function Button({ className, ...props}){
     props.variant ??='solid';
     props.color ??='gray'  ;
-
+    
 
     className=clsx(
         baseStyles[props.variant],
         props.variant === 'outline'?
         variantStyles.outline[props.color]:
-        props.varaiant == 'solid'?
+        props.variant == 'solid'?
         variantStyles.solid[props.color]: undefined,
         className
     )
+
 
     return typeof props.href === 'undefined'?
     <button className={className} {...props} />:

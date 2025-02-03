@@ -1,0 +1,226 @@
+.herosvg{
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    animation: spin 1s linear infinite;
+}
+
+
+.herosvg1{
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    animation: spin-reverse 6s linear infinite;
+}
+
+.herodiv{
+    overflow: hidden;
+    padding: 5rem  0px;
+}
+
+
+.herodiv2{
+    position: relative;
+    z-index: 10;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 42rem;
+}
+
+.heroh1{
+    font-size: 2.5rem;  
+    line-height: 3rem;  
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: rgb(17 24 39 / 1);
+
+}
+
+.heroplayicon{
+    height: 1.5rem;
+    width: 1.5rem;
+    flex: none;
+}
+
+.herodiv3{
+    position: relative;
+    margin-top:2.5rem;
+}
+
+.hero-backgroundIllustration{
+    position: absolute;
+    left: 50%;
+    top: 1rem;
+    height: 1026px;
+    width: 1026px;
+    transform: translateX(-33.333333%);
+    stroke : rgb(212 212 212 / 0.7);
+    mask-image:linear-gradient(to bottom,white 20%,transparent 75%)
+
+}
+
+.herodiv4{
+    margin: 0px -1rem;
+    height: 448px;
+    padding:0px 2.25rem;
+    mask-image: linear-gradient(to bottom, white 60%, transparent);
+}
+
+.hero-phoneframe{
+    margin:0px auto;
+    max-width: 366px;
+}
+
+.herodiv5{
+    position: relative;
+    margin-top: -1rem;
+}
+
+.herop{
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: rgb(17 24 39 / 1);
+}
+
+.heroul{
+    margin:2rem auto 0px auto;
+    display: flex;
+    max-width: 36rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:2rem 2.5rem;
+}
+
+
+ 
+
+.cnnli{
+    display: none;
+}
+
+.huffpostli{
+    display: none;
+}
+
+.hero-image{
+    height: 2rem;
+    width: auto;
+}
+
+@media (min-width: 640px){
+    .herodiv{
+        padding: 8rem 0px;
+    }
+    .herodiv3{
+        margin-top: 5rem;
+    }
+    .herodiv4{
+        margin:0px;
+    }
+    .hero-backgroundIllustration{
+        top:4rem;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1024px){
+    .herodiv{
+        padding-bottom: 8rem;
+    }
+    .herodiv1{
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 5rem 2rem;
+    }
+    .herodiv2{
+        grid-column: span 7 / span 7;
+        max-width:none;
+        padding-top:1.5rem;
+    }
+    .herodiv3{
+        grid-column: span 5 / span 5;
+        grid-row: span 2 / span 2;
+        margin-top: 0px;
+    }
+    .herodiv4{
+        position: absolute;
+        left: -2.5rem;
+        right: -2.5rem;
+        bottom: -5rem;
+        top: -2.5rem;
+        height: auto;
+        padding:2.5rem 0px 0px 0px;
+    }
+    .hero-backgroundIllustration{
+        top: -4rem;
+        margin-left: 3rem;
+    }
+
+    .herodiv5{
+        margin-top: 0px;
+        grid-column: span 7 / span 7;
+    }
+    .herop{
+        text-align: left;
+        grid-column: span 7 / span 7;
+    }
+    .heroul{
+        margin-left: 0px;
+        margin-right: 0px;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1280px){
+    .herodiv{
+        padding-bottom: 9rem;
+    }
+    .herodiv2{
+        grid-column: span 6 / span 6 ;
+    }
+
+    .herodiv3{
+        grid-column: span 6 / span 6;
+    }
+    .herodiv4{
+        bottom: -8rem;
+    }
+    .hero-backgroundIllustration{
+        top: -3.5rem;
+        margin-left: 0px;
+    }
+    .herodiv5{
+        grid-column: span 6 / span 6;
+    }
+    .cnnli{
+        display: block;
+    }
+
+    .huffpostli{
+        display: block;
+    }
+}
+
+
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@keyframes spin-reverse{
+    from{
+        transform: rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}

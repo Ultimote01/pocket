@@ -1,0 +1,24 @@
+.appstore-link{
+    border-radius: 0.5rem;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.appstore-link-opt{
+    background-color: rgb(31 41 55 / 1);
+    color: rgb(255 255 255 / 1);
+}
+
+.appstore-link-opt:hover{
+    background-color: rgb(17 24 39 / 1);
+}
+
+.appstore-link-opt1{
+    background-color: rgb(255 255 255 / 1);
+    color: rgb(17 24 39  / 1);
+}
+
+.appstore-link-opt1:hover{
+    background-color: rgb(249 250 251 / 1);
+}

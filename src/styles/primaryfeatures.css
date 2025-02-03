@@ -1,0 +1,245 @@
+ .invitescreendiv{
+    padding: 1.5rem 1rem;
+ }
+
+ .invitescreendiv1 > :not([hidden]) ~ :not([hidden]){
+    padding-top: 1.5rem;
+ }
+
+
+.invitescreendiv2{
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    border-bottom-width: 1px;
+    border-color: rgb(229 229 229 / 1);
+    padding-bottom: 0.5rem;
+    color: rgb(23 23 23 / 1)
+}
+
+.invitescreendiv3{
+    background-color: rgb(6 182 212 / 1);
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: rgb(255 255 255 / 1);
+    text-align: center;
+    
+}
+
+.stockscreendiv > :not([hidden]) ~ :not([hidden]){
+   border-top-width: 1px;
+   border-bottom-width: 0px;
+   border-color: rgb(243 244 246 / 1);
+}
+
+
+.investscreendiv > :not([hidden]) ~ :not([hidden]){
+   margin-top: 1rem;
+}
+
+
+.featuresdesktopTabGroup{
+   display: grid;
+   grid-template-columns: repeat(12, minmax(0, 1fr));
+   align-items: center;
+   gap:2rem;
+}
+
+.featuresdesktopTabList{
+   position: relative;
+   z-index: 10;
+   order: 9999;
+   grid-column: span 6 / span 6;
+}
+
+.featuresdesktopTabList > :not([hidden]) ~ :not([hidden]){
+   margin-top: 1.5rem;
+}
+
+.featuresdesktopdiv{
+   position: relative;
+   border-radius: 1rem;
+   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 150ms;
+}
+
+.featuresdesktopdiv:hover{
+   background-color: rgb(38 38  38 / 0.3);
+}
+
+.featuresdesktopTab{
+   text-align: left;
+}
+
+/* .featuresdesktopTab:not(:focus-visible){
+   outline: none;
+} */
+
+.featuresdesktopTab:focus-visible{
+   outline: none;
+}
+
+.featuresdesktopCB{
+   animation: spin-it  6s linear  infinite ;
+}
+
+
+.featuresdesktopTabpanel{
+   display:flex;
+   grid-column-start: 1;
+   grid-row-start: 1;
+}
+
+.featuresdesktopTabpanel:focus{
+   outline-offset: 32px;
+}
+
+/* .featuresdesktopTabpanel:not(:focus-visible){
+   outline: none;
+} */
+
+.featuresdesktopTabpanel:focus-visible{
+   outline: none;
+}
+
+
+
+.featuresmobilediv{
+   margin-bottom: -1rem;
+   display: flex;
+   scroll-snap-type: x mandatory;
+   overflow-x: auto;
+   overscroll-behavior-x: contain;
+   scroll-behavior: smooth;
+   padding-bottom: 1rem;
+   scrollbar-width: none;
+}
+
+.featuresmobilediv::-webkit-scrollbar{
+   display: none;
+}
+
+.featuresmobilediv > :not([hidden]) ~ :not([hidden]){
+   padding-left: -1rem;
+   padding-right: -1rem;
+}
+
+.featuresmobilediv1{
+   width: 100%;
+   flex: none;
+   scroll-snap-align: center;
+   padding: 0px 1rem;
+}
+
+.featuresmobilephoneframe{
+   position: relative;
+   margin: 0px auto;
+   width: 100%;
+   max-width: 366px;
+}
+
+.featuresmobilediv2{
+   position:absolute;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background-color: rgb( 38 38 38 / 0.95);
+   backdrop-filter: blur(8px);
+   padding: 1.5rem;
+}
+
+.featuresmobileh3{
+   margin-top: 1.5rem;
+   font-size: 0.875rem;
+   line-height: 1.5rem;
+   font-weight: 600;
+   color:rgb(255 255 255 / 1);
+}
+
+.primaryfeatures-section{
+   background-color: rgb(23 23 23 / 1);
+   padding:5rem 0px;
+}
+
+.primaryfeatures-div{
+   margin: 0px auto;
+   max-width: 40rem;
+}
+
+.primaryfeatures-div1{
+   margin-top: 4rem;
+}
+
+.primaryfeatures2ndcontainer{
+   display: none;
+}
+
+@media (min-width: 640px){
+   .featuresmobilediv > :not([hidden]) ~ :not([hidden]){
+      padding-left: -1.5rem;
+      padding-right: -1.5rem;
+   }
+   .featuresmobilediv1{
+      padding: 0px 1rem;
+   }
+   .featuresmobilediv2{
+      padding:2.5rem;
+   }
+   .featuresmobileh3{
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+   }
+
+   .primaryfeatures-section{
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+   }
+
+}
+
+@media (min-width: 768px){
+      .primaryfeatures2ndcontainer{
+         display: block;
+         margin-top: 5rem;
+      }
+
+      .primaryfeatures-div1{
+         display: none;
+      }
+}
+
+@media (min-width: 1024px){
+   .featuresdesktopTabGroup{
+      gap: 4rem;
+   }
+   .primaryfeatures-div{
+      margin: 0px;
+      max-width: 48rem;
+   }
+  
+    
+}
+
+
+@media (min-width: 1280px){
+   .featuresdesktopTabGroup{
+   gap: 6rem ;
+}
+}
+
+
+@keyframes spin-it{
+   from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+   

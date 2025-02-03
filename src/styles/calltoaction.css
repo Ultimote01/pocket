@@ -1,0 +1,62 @@
+.calltoactionSection{
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(23 23 23 / 1);
+    padding: 5rem 0px 5rem 0px;
+}
+
+.calltoactiondiv{
+    position: absolute;
+    left: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.calltoactionCircleBackground{
+    animation: calltoactionSpin 6s linear infinite;
+}
+
+.calltoactionContainer{
+    position: relative;
+}
+
+.calltoactiondiv1{
+    margin: 0px auto 0px auto;
+    max-width: 28rem;
+}
+
+.calltoactionh2{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: rgb( 255 255 255 / 1)
+}
+
+@media (min-width: 640px){
+    .calltoactionSection{
+        padding: 7rem 0px 7rem 0px ;
+    }
+    .calltoactiondiv{
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .calltoactiondiv1{
+        text-align: center;
+    }
+
+    .calltoactionh2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@keyframes calltoactionSpin {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
