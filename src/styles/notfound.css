@@ -1,0 +1,35 @@
+.notfoundContainer{
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0px 2.5rem 0px;
+    text-align: center;
+}
+
+.notfoundCirclebackground{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+    margin-top:11rem;
+    width: 68.125rem;
+    transform: translateX(-50%) translateY(-50%);
+    stroke: rgb(212 212 212 / 0.3);
+    mask-image:linear-gradient(to bottom,white 20%,transparent 75%)
+}
+
+
+.notfoundbutton{
+    margin-top: 2rem;
+}
+
+@media (min-width: 640px){
+    .notfoundContainer{
+        padding:8rem 0px 8rem 0px;
+
+    }
+}

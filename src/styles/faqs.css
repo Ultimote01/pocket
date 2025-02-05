@@ -1,0 +1,61 @@
+.faqsSection{
+    border-top-width: 1px;
+    border-color: rgb(229 299 299 / 1);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+
+.faqsdiv{
+    max-width: 40rem;
+    margin: 0px auto 0px auto;
+}
+
+.faqsh2{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: rgb(23 23 23 / 1);
+}
+.faqsp{
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: rgb(82 82 82 / 1);
+}
+
+.faqsul{
+    margin: 4rem auto 0px auto;
+    display: grid;
+    max-width: 40rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap:2rem; 
+}
+
+.faqsli-ul > :not([hidden]) ~ :not([hidden]){
+    margin-top:2.5rem;
+}
+
+
+
+@media (min-width: 640px){
+    .faqsSection{
+        padding: 8rem 0px 8rem 0px;
+    }
+
+    .faqsul{
+        margin-top:5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .faqsdiv{
+        margin: 0px;
+    }
+    .faqsul{
+        max-width: none;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    }
+}
