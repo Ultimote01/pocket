@@ -1,0 +1,12 @@
+.signInlink{
+    color: rgb(8 145 178 / 1);
+}
+
+.signIndiv > :not([hidden]) ~ :not([hidden]){
+    margin-top: 1.5rem;
+}
+
+.signInbutton{
+    margin-top: 2rem;
+    width: 100%;
+}

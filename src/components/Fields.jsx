@@ -17,7 +17,7 @@ function Label({id , children}){
     )
 }
 
-export function TextFeild({label, type='text',className,...props}){
+export function TextField({label, type='text',className,...props}){
     let id = useId()
 
     return(
@@ -29,7 +29,7 @@ export function TextFeild({label, type='text',className,...props}){
 }
 
 export function SelectField({label, className, ...props}){
-     
+    let id = useId()
     return (
         <div className={className}>
             {label && <Label id={id}>{label}</Label>}

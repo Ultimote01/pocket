@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { TextFeild } from '@/components/Fields'
+import { TextField } from '@/components/Fields'
 import { Logomark} from '@/components/Logo'
 import { NavLinks  } from './Navlinks'
 import qrCode  from '@/images/qr-code.svg'
@@ -60,7 +60,7 @@ function QrCodeBorder(props) {
                 </div>
                 <div className='footer-div5'>
                   <form className='footer-form'>
-                    <TextFeild 
+                    <TextField 
                     type='email'
                     aria-label="Email address"
                     placeholder='Email address'

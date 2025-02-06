@@ -1,0 +1,28 @@
+.registerlink{
+    color: rgb(8 145 178 / 1);
+}
+
+.registertextfield{
+    grid-column: 1 / -1;
+}
+
+.registertextfield1{
+    grid-column: 1 / -1;
+}
+
+
+.registerselectfield{
+    grid-column: 1 / -1;
+}
+
+.registerform{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,  1fr));
+    gap: 1.5rem;
+}
+
+
+.registerbutton{
+    margin-top: 2rem;
+    width: 100%;
+}
